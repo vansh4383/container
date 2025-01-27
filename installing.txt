@@ -1,0 +1,18 @@
+These are the following initial steps to install the docker in ubuntu server  -> 
+1. update and upgrade all the packages of the ubuntu server by using the commands
+$ sudo apt update & apt-get upgrade -y 
+Here -y is used to allow all the asked acess means yes 
+2. install docker by using the command 
+$sudo apt install docker.io -y 
+after installing all the requirements docker will be installed  
+3. add the  specific user to the docker 
+$sudo su -
+$usermod -aG docker user 
+$sudo su - user 
+try running the (docker) command it will give you all the command options related docker 
+$docker
+4. check the status and start the docker 
+$systemctl docker start 
+5. call the docker daemon by calling the image 
+$docker run hello-world
+now docker is properly set up 
