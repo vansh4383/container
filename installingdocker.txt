@@ -15,4 +15,4 @@ $docker
 $systemctl docker start 
 5. call the docker daemon by calling the image 
 $docker run hello-world
-now docker is properly set up 
+now docker is properly set up and it locally downloaded the image 
