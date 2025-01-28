@@ -40,3 +40,12 @@ $docker rm container id/name
 used to remove the conatiner 
 $docker rmi image 
 used to remove the images 
+$docker login 
+command used to login dockerhub through username and password 
+$docker pull imagename:tag 
+used to pull the image from the dockerhub 
+$ docker push username/repositoryname:tag 
+used to push the image on docker hub 
+$docker build -t imagename:tag or version .
+command is used to build the image from the docker file . (.) at the end represents where to store the 
+image (here in the current repository), -t is used the tag the image with name .
