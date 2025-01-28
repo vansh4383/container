@@ -1,0 +1,42 @@
+commands in docker direct the docker daemon what task to perform .
+$docker info 
+gives the information related to the docker 
+$docker ps 
+gives the list of all the live containers
+$docker ps -a 
+gives the list  of all containers 
+$docker search (any image name )
+gives the different images related the name.
+for example  docker search jenkins = gives all the  jenkins images of diffrent versions.
+$docker start container id/name
+start the container
+$docker stop container id /name 
+kill the process in the  container 
+$docker pause container id/name 
+pause the process in the container 
+$docker restart container id/name
+restart the container by killing all the processes and start the container again 
+$docker run -it image 
+runs the container in an interactive way 
+$docker run -d image 
+runs the container in non interactive way and run the process in the background
+$docker logs -f container id /name 
+gives the logs of the container . -f is used to check the latest entries of the container 
+$docker run -it --name (name of the container ) image 
+gives the name to the container 
+$docker run -it --name d1 image (first command you want to run in the conatiner )
+gives the first command given in the container 
+$docker images  
+gives the all sets of docker images installed in your system 
+$docker run -d --name d1 -p (hostportno.) : (containerportno.) image
+used in the port mapping of the container 
+example = docker run -d --name d3 -p 80:80 httpd
+$docker run -d --name d2 -v (hostpath):(containerpath) image 
+used to connect the container  the container and host os through mounting .
+example = docker run -d --name d3 -v tmp/hostpath :tmp/contpath centos
+$docker exec -d container id/name command 
+used to execute the command in the container manually 
+$docker rm container id/name 
+used to remove the conatiner 
+$docker rmi image 
+used to remove the images 
