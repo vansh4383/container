@@ -48,4 +48,5 @@ $ docker push username/repositoryname:tag
 used to push the image on docker hub 
 $docker build -t imagename:tag or version .
 command is used to build the image from the docker file . (.) at the end represents where to store the 
-image (here in the current repository), -t is used the tag the image with name .
+image (here in the current repository), -t is used the tag the image with name .use -of (path) if you 
+donot want to store the image in current repository.
